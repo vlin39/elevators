@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Valentina Lin - Portfolio</title>
+  <title>Valentina Lin - CSCI 1300 - Elevator Interface</title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
 </head>
 <body>
 
   <!-- Topbar -->
-  <div class="topbar"><h1>Valentina Lin</h1></div>
+  <div class="topbar"><h1>Elevator Interface</h1></div>
 
   <!-- Sidebar - removed "collapsed" class -->
   <nav class="sidebar" id="sidebar">
@@ -18,69 +18,84 @@
       <span class="iconify" data-icon="mingcute:menu-fill"></span>
     </button>
     <div id="sidebarLinks">
-      <a href="#about" id="link-about">About</a>
-      <a href="#projects" id="link-projects">Projects</a>
-      <a href="#skills" id="link-skills">Skills</a>
-      <a href="#contact" id="link-contact">Contact</a>
+      <a href="#interface" id="link-about">Interface</a>
+      <a href="#observations" id="link-projects">Observations</a>
+      <a href="#personas" id="link-skills">Personas</a>
+      <a href="#storyboard" id="link-contact">Storyboard</a>
     </div>
   </nav>
 
   <div class="main-layout">
     <div class="content-area">
 
-      <!-- About -->
-      <div id="about" class="group-box section-anchor">
+      <!-- section one -->
+      <div id="interface" class="group-box section-anchor">
         <div class="content-box">
-          <h2>About</h2>
-          <p>I'm an up-and-coming data scientist and machine learning engineer who enjoys exploring ideas across disciplines! 😄</p>
+          <h2>Interface</h2>
+          <p>content here</p>
         </div>
       </div>
 
-      <!-- Projects - Now with horizontal scroll instead of carousel -->
-      <div id="projects" class="group-box section-anchor">
-        <h2>Projects</h2>
-        <div class="project-container">
-          <div class="project-card">
-            <div class="project-image"></div>
-            <h3>Image Classifier</h3>
-            <p>Built a CNN-based image classifier achieving 92% accuracy on CIFAR-10 dataset.</p>
-            <small>Machine Learning, TensorFlow, Python</small>
-          </div>
-          <div class="project-card">
-            <div class="project-image"></div>
-            <h3>Portfolio Website</h3>
-            <p>Designed and coded a personal portfolio using HTML, CSS, and JavaScript.</p>
-            <small>Web Development, Frontend, UI Design</small>
-          </div>
-          <div class="project-card">
-            <div class="project-image"></div>
-            <h3>Chatbot</h3>
-            <p>Created a rule-based customer support chatbot using Python and NLTK.</p>
-            <small>NLP, Python, User Interaction</small>
-          </div>
-          <div class="project-card">
-            <div class="project-image"></div>
-            <h3>Data Dashboard</h3>
-            <p>Developed an interactive data visualization dashboard using D3.js.</p>
-            <small>Data Visualization, D3.js, JavaScript</small>
-          </div>
+      <!-- section observations -->
+      <div id="observations" class="group-box section-anchor">
+        <div class="content-box">
+          <h2>Observations</h2>
+        </div>
+        <div class="content-box">
+          <details>
+            <summary><h3>All Interview Questions</h3></summary>
+            <ol>
+              <li>When do you use the elevator?</li>
+              <li>How many times do you use the elevator per day?</li>
+              <li>Where/in what scenarios do you use the elevator?</li>
+              <li>How many people are there normally when you use the elevator? How often are there so many people you choose not to take the elevator?</li>
+              <li>What buttons are there? What do you press? How do you know which direction you’re going?</li>
+              <li>How do you wait for the elevator? Where do you look? What about when there’s one elevator vs multiple?</li>
+              <li>Do you ever press a button multiple times? In what cases?</li>
+              <li>What do you do when the elevator arrives? (One elevator vs multiple, different elevator locations)</li>
+              <li>How do you get in?</li>
+              <li>What’s your process of getting in?</li>
+              <li>What do you do when the elevator is open in front of you, you’re further away (you were not waiting, you’ve just arrived) and there seems to be room in the elevator?</li>
+              <li>What do you do when the elevator is full and you’re waiting for the next one?</li>
+              <li>Do you check which floor you’re on? How do you determine that?</li>
+              <li>How do you know which floor you’re going to?</li>
+              <li>How often do you encounter elevators with a legend for the levels inside/outside? Like, the list of what’s on each floor?</li>
+              <li>In what situations do you check the levels? Do you normally check them inside/outside?</li>
+              <li>How do you find the button for the floor you need to go to when inside the elevator?</li>
+              <li>How are you inside the elevator? Where do you stand? Where do you look?</li>
+              <li>Do you move while the elevator is moving? If you’re getting out, and you’re at the back…</li>
+              <li>What do you do if the elevator stops?</li>
+              <li>What do you do if someone gets in while you’re in the elevator?</li>
+              <li>How do you get out of the elevator?</li>
+            </ol>
+          </details>
+        </div>
+        <div class="content-box">
+          <h3>Observations + Interview Highlights</h3>
+          <ul>
+            <li>When waiting for the elevator, people tend to press the button repeatedly when there’s no visual indicator. </li>
+            <li>Inside the elevator, people tend to press a button repeatedly if the doors stay open for a while (this button is usually their destination floor, interestingly).</li>
+            <li>Button layouts tend to be inconsistent</li>
+            <li>When people want to keep an elevator’s doors open for a while, they tend to use the button.</li>
+            <li>When people want to get an elevator’s closing doors to open, they tend to use their arm or foot. </li>
+            <li>When traveling alone, people tend to look at the visual indicators while waiting inside or outside the elevator. The next most common place to look is roughly tied between a floor legend (if there is one) and the floor.</li>
+          </ul>
         </div>
       </div>
 
-      <!-- Skills -->
-      <div id="skills" class="group-box section-anchor">
+      <!-- section three -->
+      <div id="personas" class="group-box section-anchor">
         <div class="content-box">
-          <h2>Skills</h2>
-          <p>Python, Machine Learning, SQL, Git, D3.js, TensorFlow</p>
+          <h2>Personas</h2>
+          <p>content here</p>
         </div>
       </div>
 
-      <!-- Contact -->
-      <div id="contact" class="group-box section-anchor">
+      <!-- section four -->
+      <div id="storyboard" class="group-box section-anchor">
         <div class="content-box">
-          <h2>Contact</h2>
-          <p>Email: valentina_lin@brown.edu</p>
-          <p><a href="#">Download Resume</a></p>
+          <h2>Storyboard</h2>
+          <p>content here</p>
         </div>
       </div>
 
