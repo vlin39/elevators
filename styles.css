@@ -167,6 +167,38 @@ summary h3 {
   margin: 0;
 }
 
+.image-row {
+  display: flex;
+  gap: 2rem;
+  /* padding: 0 5vw; */
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;  /* align images along top */
+}
+
+.image-row img {
+  max-height: 40rem;   /* same height across row */
+  height: auto;
+  width: auto;
+  max-width: 100%;     /* prevent overflow */
+  object-fit: contain;  /* optional, helps with svg or transparent pngs */
+}
+
+@media (max-width: 700px) {
+  .image-row {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .image-row img {
+    max-height: none;   /* no height constraint in vertical */
+    max-width: 100%;     /* same width across column */
+    width: 100%;         /* fixes width in stacked view */
+    height: auto;       /* height scales naturally */
+  }
+}
+
 /* Project container with horizontal scroll */
 .project-container {
   display: flex;
